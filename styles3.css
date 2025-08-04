@@ -1,0 +1,171 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f2937;
+  color: #fff;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.search input {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+}
+
+/* Banner */
+.banner {
+  height: 300px;
+  background-image: url('https://cdn.thewirecutter.com/wp-content/media/2024/07/laptopstopicpage-2048px-3685-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Welcome */
+.welcome {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.welcome h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 30px;
+  background: #e1ecf4;
+}
+
+.gallery-item {
+  flex: 1 1 30%;
+  height: 200px;
+  border-radius: 12px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item .caption {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 8px;
+  font-weight: bold;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Gallery backgrounds */
+.item1 {
+  background-image: url('https://m.media-amazon.com/images/I/618d5bS2lUL._AC_SL1500_.jpg');
+}
+
+.item2 {
+  background-image: url('https://5.imimg.com/data5/HW/JY/MY-54744149/xps-15-dell-laptop.png');
+}
+
+.item3 {
+  background-image: url('https://www.techspot.com/images/products/2020/laptops/org/2023-12-18-product-2.jpg');
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 250px;
+  padding: 20px;
+}
+
+.left-bg {
+  background-image: url('https://press.asus.com/assets/w_1266,h_712/b36d6e6d-e9a0-4297-9983-ebcd69567d05/ROG%20Zephyrus%20G14_G16.png');
+  background-size:cover;
+  background-position: left;
+  color: white;
+  opacity: 85%;
+}
+
+.right-bg {
+  background-image: url('https://p3-ofp.static.pub/fes/cms/2022/09/28/kzdexf5ieorefgg00hjdjgi4v7v89e623617.jpg');
+  background-size:cover;
+  background-position: right;
+  color: white;
+  flex-direction: row-reverse;
+  opacity:90%;
+}
+
+.content-item .text {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  flex: 1;
+  min-width: 250px;
+  border-radius: 10px;
+  margin: 10px;
+
+}
+
+
+footer {
+  background: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+footer a {
+  color: #aad4ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
